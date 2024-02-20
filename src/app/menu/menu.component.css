@@ -1,7 +1,8 @@
-.drawer-container {
-    height: 100%;
+.menu-button {
+    background-color: #2196F3; /* Color de fondo azul */
   }
   
-  mat-drawer {
-    width: 250px;
+  .menu-button .mat-icon {
+    font-size: 24px; /* Tamaño del icono */
+    color: white; /* Color del icono blanco */
   }

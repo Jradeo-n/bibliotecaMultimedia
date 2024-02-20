@@ -1,0 +1,26 @@
+<div class="container">
+    <!-- Input de búsqueda y botón de filtro -->
+    <div class="row justify-content-center mb-3 mt-3">
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar por nombre..." [(ngModel)]="searchTerm">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" (click)="search()">Buscar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <!-- Lista de héroes -->
+    <div class="row">
+      <div class="col-md-4" *ngFor="let heroe of filteredHeroes">
+        <div class="card mb-4 shadow-sm">
+          <img [src]="heroe.imagenUrl" class="card-img-top smaller-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ heroe.nombre }}</h5>
+            <p class="card-text">{{ heroe.descripcion }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,6 @@
+
+  /* Agregar scrollbar al contenido */
+  .edit-hero-dialog-content {
+    max-height: 400px; /* ajustar según sea necesario */
+    overflow-y: auto;
+  }

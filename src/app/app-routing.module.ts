@@ -4,7 +4,6 @@ import { ListadoPeliculasComponent } from './listado-peliculas/listado-peliculas
 
 const routes: Routes = [
   { path: 'listado-peliculas', component: ListadoPeliculasComponent, pathMatch: 'full', data: { title: 'Listado de Películas' } },
-  // Otras rutas aquí
 ];
 
 @NgModule({

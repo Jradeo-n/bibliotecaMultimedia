@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BannerModule } from './banner/banner.module';
+import { EditModalModule } from './listado-peliculas/modal/edit-modal/edit-modal.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -11,6 +12,7 @@ import { BannerModule } from './banner/banner.module';
     BrowserModule,
     AppRoutingModule,
     BannerModule,
+    EditModalModule
 
   ],
   providers: [],

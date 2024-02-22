@@ -9,6 +9,9 @@
             </div>
           </div>
         </div>
+        <div class="col-md-4">
+          <button type="button" class="btn btn-warning add-button ml-2" (click)="add()">Crear héroe</button>
+        </div>
       </div>
   
     <!-- Lista de héroes -->
@@ -17,9 +20,15 @@
         <div class="card mb-4 shadow-sm">
           <img [src]="heroe.imagenUrl" class="card-img-top smaller-image" alt="...">
           <div class="card-body">
-            <h5 class="card-title">{{ heroe.nombre }}</h5>
+            <h4 class="card-title"><strong>{{ heroe.nombre }}</strong></h4>
             <p class="card-text">{{ heroe.descripcion }}</p>
-          </div>
+            <p class="card-text"><strong>Poder:</strong> {{ heroe.poder }}</p>
+            <!-- Botón de edición -->
+       <!-- Botones de editar, eliminar y añadir -->
+       <div class="card-footer text-center">
+        <button type="button" class="btn btn-primary edit-button mr-2" (click)="edit(heroe)">Editar</button>
+        <button type="button" class="btn btn-danger delete-button" (click)="deleteHero(heroe)">Eliminar</button>
+      </div>
         </div>
       </div>
     </div>
